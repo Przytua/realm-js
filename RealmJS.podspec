@@ -63,7 +63,8 @@ Pod::Spec.new do |s|
                               }
 
   # TODO: Consider providing an option to build with the -dbg binaries instead
-  s.ios.vendored_frameworks = 'react-native/ios/realm-js-ios.xcframework'
+  s.ios.vendored_libraries = 'react-native/ios/realm-js-ios.xcframework/ios-arm64_armv7/librealm-js-ios.a'
+  s.ios.public_header_files = ['react-native/ios/realm-js-ios.xcframework/ios-arm64_armv7/Headers/realm-js-ios/jsc_init.h', 'react-native/ios/realm-js-ios.xcframework/ios-arm64_armv7/Headers/realm-js-ios/rpc.hpp']
 
   s.dependency 'React'
   # TODO: Ensure the same version of GCDWebServer is used for Android

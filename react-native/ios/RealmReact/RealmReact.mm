@@ -19,7 +19,7 @@
 #import "RealmReact.h"
 #import "RealmAnalytics.h"
 
-#import <realm-js-ios/jsc_init.h>
+#import "jsc_init.h"
 
 #import <React/RCTBridge+Private.h>
 #import <React/RCTJavaScriptExecutor.h>
@@ -31,7 +31,7 @@
 #import <net/if.h>
 
 #if DEBUG
-#include <realm-js-ios/rpc.hpp>
+#include "rpc.hpp"
 #import "GCDWebServer.h"
 #import "GCDWebServerDataRequest.h"
 #import "GCDWebServerDataResponse.h"
